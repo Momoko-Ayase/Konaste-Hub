@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="base" x1="0.15" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#d01a30"/>
+      <stop offset="0.55" stop-color="#ad091b"/>
+      <stop offset="1" stop-color="#760611"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.24"/>
+      <stop offset="0.48" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glyph" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ffe3e7"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="58" fill="url(#base)"/>
+  <rect x="8" y="8" width="240" height="240" rx="58" fill="url(#sheen)"/>
+  <rect x="8.75" y="8.75" width="238.5" height="238.5" rx="57.25" fill="none" stroke="#5a000e" stroke-opacity="0.35" stroke-width="1.5"/>
+  <rect x="66" y="62" width="38" height="132" rx="19" fill="url(#glyph)"/>
+  <polyline points="184,74 130,128 184,182" fill="none" stroke="url(#glyph)" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,29 @@
+[package]
+name = "konaste-bootstrap"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Acquire a pinned official Konaste launcher runtime pair without running the installer"
+publish = false
+
+[dependencies]
+cab = "0.6"
+fs2 = "0.4"
+hex = "0.4"
+msi = "0.11"
+reqwest = { version = "0.13", default-features = false, features = ["blocking", "rustls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.11"
+thiserror = "2"
+url = "2"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61", features = [
+    "Win32_Foundation",
+    "Win32_Security_Cryptography",
+    "Win32_Security_WinTrust",
+] }
+
+[dev-dependencies]
+tempfile = "3"

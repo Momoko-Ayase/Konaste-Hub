@@ -1,0 +1,36 @@
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+default-members = ["crates/*"]
+
+[workspace.package]
+edition = "2024"
+license = "MIT"
+version = "0.1.0"
+
+[profile.release]
+opt-level = "z"
+lto = true
+strip = true
+
+[profile.dev]
+debug = 1
+
+# Image decoding and SVG rasterization take seconds unoptimized; the Hub
+# decodes key art and fallback backgrounds at startup.
+[profile.dev.package.image]
+opt-level = 3
+[profile.dev.package.zune-jpeg]
+opt-level = 3
+[profile.dev.package.png]
+opt-level = 3
+[profile.dev.package.fdeflate]
+opt-level = 3
+[profile.dev.package.tiny-skia]
+opt-level = 3
+[profile.dev.package.tiny-skia-path]
+opt-level = 3
+[profile.dev.package.resvg]
+opt-level = 3
+[profile.dev.package.usvg]
+opt-level = 3

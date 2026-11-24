@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="base" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071a24"/><stop offset="0.55" stop-color="#123f4f"/><stop offset="1" stop-color="#2c7a7b"/></linearGradient>
+<radialGradient id="glow" cx="0.74" cy="0.42" r="0.55"><stop offset="0" stop-color="#b8f1ff" stop-opacity="0.5"/><stop offset="1" stop-color="#b8f1ff" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow2" cx="0.1" cy="0.95" r="0.6"><stop offset="0" stop-color="#7a5cff" stop-opacity="0.32"/><stop offset="1" stop-color="#7a5cff" stop-opacity="0"/></radialGradient>
+<radialGradient id="vignette" cx="0.6" cy="0.45" r="0.85"><stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.45"/></radialGradient>
+<linearGradient id="keyfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.9"/><stop offset="1" stop-color="#fff" stop-opacity="0.3"/></linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#base)"/>
+<rect width="1600" height="900" fill="url(#glow)"/>
+<rect width="1600" height="900" fill="url(#glow2)"/>
+<g fill="#fff">
+<circle cx="980" cy="140" r="3" fill-opacity="0.8"/><circle cx="1120" cy="90" r="2" fill-opacity="0.6"/>
+<circle cx="1290" cy="170" r="3" fill-opacity="0.75"/><circle cx="1460" cy="110" r="2" fill-opacity="0.6"/>
+<circle cx="1540" cy="230" r="3" fill-opacity="0.7"/><circle cx="1040" cy="260" r="2" fill-opacity="0.5"/>
+<circle cx="1380" cy="300" r="2" fill-opacity="0.55"/><circle cx="880" cy="320" r="2" fill-opacity="0.5"/>
+<path d="M1220 210l8 22 22 8-22 8-8 22-8-22-22-8 22-8z" fill-opacity="0.85"/>
+</g>
+<g transform="translate(800 470) skewX(-18)">
+<g fill="url(#keyfade)"><rect x="0" y="0" width="76" height="300" rx="6"/><rect x="84" y="0" width="76" height="300" rx="6"/><rect x="168" y="0" width="76" height="300" rx="6"/><rect x="252" y="0" width="76" height="300" rx="6"/><rect x="336" y="0" width="76" height="300" rx="6"/><rect x="420" y="0" width="76" height="300" rx="6"/><rect x="504" y="0" width="76" height="300" rx="6"/><rect x="588" y="0" width="76" height="300" rx="6"/><rect x="672" y="0" width="76" height="300" rx="6"/><rect x="756" y="0" width="76" height="300" rx="6"/></g>
+<g fill="#06141b" fill-opacity="0.9"><rect x="56" y="0" width="44" height="180" rx="4"/><rect x="140" y="0" width="44" height="180" rx="4"/><rect x="308" y="0" width="44" height="180" rx="4"/><rect x="392" y="0" width="44" height="180" rx="4"/><rect x="476" y="0" width="44" height="180" rx="4"/><rect x="644" y="0" width="44" height="180" rx="4"/><rect x="728" y="0" width="44" height="180" rx="4"/></g>
+</g>
+<rect width="1600" height="900" fill="url(#vignette)"/>
+</svg>

@@ -1,0 +1,4 @@
+# Keeps local builds within memory on small machines. CI overrides this with
+# CARGO_BUILD_JOBS.
+[build]
+jobs = 2

@@ -1,0 +1,2 @@
+// Resource 1 is the window and taskbar icon (gpui loads it by that id).
+1 ICON "icon.ico"

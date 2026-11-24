@@ -1,0 +1,12 @@
+[package]
+name = "konaste-manifest"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Validate and decode the observed Konaste binary resource-index format"
+publish = false
+
+[dependencies]
+sha2 = "0.11"
+thiserror = "2"
+url = "2"

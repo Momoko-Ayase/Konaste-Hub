@@ -1,0 +1,18 @@
+[package]
+name = "konaste-discovery"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+konaste-bootstrap = { path = "../konaste-bootstrap" }
+konaste-manifest = { path = "../konaste-manifest" }
+konaste-runtime = { path = "../konaste-runtime" }
+reqwest = { version = "0.13", default-features = false, features = ["blocking", "rustls"] }
+thiserror = "2"
+url = "2"
+
+[dev-dependencies]
+hex = "0.4"
+sha2 = "0.11"
+tempfile = "3"

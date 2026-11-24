@@ -1,0 +1,25 @@
+[package]
+name = "konaste-updater"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Recoverable staged updater for a Konaste game installation"
+publish = false
+
+[dependencies]
+futures-util = { version = "0.3", default-features = false, features = ["std"] }
+hex = "0.4"
+reqwest = { version = "0.13", default-features = false, features = ["rustls", "stream", "http2"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.11"
+thiserror = "2"
+tokio = { version = "1", default-features = false, features = ["fs", "io-util", "macros", "rt", "sync", "time"] }
+url = "2"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61", features = ["Win32_Foundation", "Win32_Security", "Win32_Storage_FileSystem", "Win32_System_IO", "Wdk_Foundation", "Wdk_Storage_FileSystem"] }
+
+[dev-dependencies]
+tempfile = "3"
+tokio = { version = "1", default-features = false, features = ["fs", "io-util", "macros", "rt", "rt-multi-thread", "sync", "time"] }

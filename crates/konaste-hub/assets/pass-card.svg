@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="200" viewBox="0 0 700 200" preserveAspectRatio="xMaxYMax slice">
+  <!-- Original artwork in the spirit of the physical e-amusement pass. Everything left of x=560 stays clear for the label and card number. -->
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f1f1f3"/>
+    </linearGradient>
+  </defs>
+  <rect width="700" height="200" fill="url(#paper)"/>
+  <path d="M0 200 L0 188 C40 178 92 180 140 200 Z" fill="#c8303f"/>
+  <path d="M0 200 L0 195 C34 189 70 190 102 200 Z" fill="#ad091b"/>
+  <path d="M560 200 C600 150 646 118 700 104 L700 200 Z" fill="#c8303f"/>
+  <path d="M590 200 C622 162 660 140 700 134 L700 200 Z" fill="#ad091b"/>
+  <path d="M630 200 C652 180 676 168 700 166 L700 200 Z" fill="#8a0715"/>
+  <path d="M548 206 C590 140 640 96 706 80" fill="none" stroke="#f38593" stroke-width="2" stroke-linecap="round"/>
+  <g>
+    <circle cx="584" cy="90" r="8" fill="#ad091b"/>
+    <circle cx="572" cy="122" r="5" fill="#c42a3a"/>
+    <circle cx="616" cy="58" r="12" fill="#930716"/>
+    <circle cx="606" cy="98" r="3.5" fill="#f08a1c"/>
+    <circle cx="642" cy="92" r="5" fill="#1fa0e3"/>
+    <circle cx="594" cy="44" r="3.5" fill="#e5481d" stroke="#f3d21c" stroke-width="1.2"/>
+    <circle cx="656" cy="40" r="6.5" fill="#c9d400"/>
+    <circle cx="674" cy="70" r="3" fill="#f08a1c"/>
+    <circle cx="684" cy="26" r="4.5" fill="#e5481d" stroke="#f3d21c" stroke-width="1.2"/>
+    <circle cx="640" cy="18" r="2.5" fill="#f08a1c"/>
+    <circle cx="612" cy="20" r="2.5" fill="#1fa0e3"/>
+    <circle cx="664" cy="112" r="2.5" fill="#6ab023"/>
+  </g>
+</svg>

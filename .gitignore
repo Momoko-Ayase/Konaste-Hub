@@ -1,0 +1,27 @@
+# Build output
+/target/
+/dist/
+
+# Optional installer prerequisites (Microsoft redistributables, never committed)
+/installer/redist/*.exe
+
+# Binaries and reverse-engineering databases
+*.dll
+*.exe
+*.msi
+*.cab
+*.idb
+*.i64
+*.pdb
+
+# Local state
+*.log
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.claude/settings.local.json
+.playwright-cli/
+Thumbs.db
+Desktop.ini

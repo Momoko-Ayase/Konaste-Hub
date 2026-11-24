@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="base" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#120a2e"/><stop offset="0.55" stop-color="#3a1c71"/><stop offset="1" stop-color="#d76d77"/></linearGradient>
+<radialGradient id="glow" cx="0.74" cy="0.42" r="0.55"><stop offset="0" stop-color="#9f7bff" stop-opacity="0.5"/><stop offset="1" stop-color="#9f7bff" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow2" cx="0.1" cy="0.95" r="0.6"><stop offset="0" stop-color="#ff8fb1" stop-opacity="0.32"/><stop offset="1" stop-color="#ff8fb1" stop-opacity="0"/></radialGradient>
+<radialGradient id="vignette" cx="0.6" cy="0.45" r="0.85"><stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.45"/></radialGradient>
+<path id="arrow" d="M0 -78 L72 -6 L34 -6 L34 70 L-34 70 L-34 -6 L-72 -6 Z"/>
+</defs>
+<rect width="1600" height="900" fill="url(#base)"/>
+<rect width="1600" height="900" fill="url(#glow)"/>
+<rect width="1600" height="900" fill="url(#glow2)"/>
+<g fill="none" stroke="#fff">
+<circle cx="1180" cy="420" r="320" stroke-opacity="0.08" stroke-width="2"/>
+<circle cx="1180" cy="420" r="250" stroke-opacity="0.12" stroke-width="2"/>
+</g>
+<g transform="translate(1180 420)">
+<use href="#arrow" transform="translate(-150 0) rotate(-90)" fill="#4da3ff" fill-opacity="0.85"/>
+<use href="#arrow" transform="translate(0 150) rotate(180)" fill="#ff4fa3" fill-opacity="0.85"/>
+<use href="#arrow" transform="translate(0 -150)" fill="#ff4fa3" fill-opacity="0.85"/>
+<use href="#arrow" transform="translate(150 0) rotate(90)" fill="#4da3ff" fill-opacity="0.85"/>
+<g fill="none" stroke="#fff" stroke-opacity="0.55" stroke-width="4">
+<use href="#arrow" transform="translate(-150 0) rotate(-90)"/>
+<use href="#arrow" transform="translate(0 150) rotate(180)"/>
+<use href="#arrow" transform="translate(0 -150)"/>
+<use href="#arrow" transform="translate(150 0) rotate(90)"/>
+</g>
+</g>
+<rect width="1600" height="900" fill="url(#vignette)"/>
+</svg>
